@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nocth Studio</title>
+
+<style>
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background:#0f172a;
+    color:white;
+}
+
+/* HEADER */
+header{
+    position:relative;
+    padding:20px;
+    text-align:center;
+    font-size:22px;
+    font-weight:bold;
+    letter-spacing:2px;
+    background:#111827;
+}
+
+/* LOGO SUPERIOR */
+.logo-top{
+    position:absolute;
+    left:20px;
+    top:10px;
+}
+
+.logo-top img{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+/* CONTENEDOR */
+.container{
+    width:90%;
+    max-width:800px;
+    margin:20px auto;
+}
+
+/* TARJETAS */
+.card{
+    display:flex;
+    gap:15px;
+    background:#1e293b;
+    border-radius:12px;
+    padding:12px;
+    margin-bottom:20px;
+    box-shadow:0 0 15px rgba(0,0,0,0.5);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:scale(1.02);
+}
+
+/* PORTADA */
+.image-container{
+    position:relative;
+}
+
+.image-container img{
+    width:110px;
+    height:150px;
+    object-fit:cover;
+    border-radius:8px;
+}
+
+/* MINI LOGO EN ESQUINA DE PORTADA */
+.mini-logo{
+    position:absolute;
+    top:5px;
+    left:5px;
+    width:25px;
+    height:25px;
+    border-radius:50%;
+    border:2px solid white;
+    object-fit:cover;
+}
+
+/* CONTENIDO */
+.card-content{
+    flex:1;
+}
+
+.title{
+    font-size:16px;
+    font-weight:bold;
+    margin-bottom:6px;
+}
+
+.stats{
+    font-size:13px;
+    color:#94a3b8;
+    margin-bottom:6px;
+}
+
+.badge{
+    display:inline-block;
+    background:#065f46;
+    padding:4px 10px;
+    border-radius:20px;
+    font-size:12px;
+    margin-bottom:8px;
+}
+
+.chapters{
+    font-size:13px;
+    color:#f87171;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <div class="logo-top">
+        <img src="imagenes/logo.png" alt="Logo">
+    </div>
+    CAPÍTULOS RECIENTES
+</header>
+
+<div class="container">
+
+    <div class="card">
+        <div class="image-container">
+            <img src="imagenes/comic1.jpg" alt="Portada">
+            <img class="mini-logo" src="imagenes/logo.png" alt="Mini Logo">
+        </div>
+        <div class="card-content">
+            <div class="title">El Dios de la Espada Regresa a la Academia</div>
+            <div class="stats">100% - 16 Chapters</div>
+            <div class="badge">Acción</div>
+            <div class="chapters">Capítulo 15 • hace 28 minutos</div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
